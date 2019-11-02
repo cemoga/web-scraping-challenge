@@ -7,6 +7,34 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Mission to Mars</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <style>
+      p {
+        font-size: 20px;
+      }
+
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        padding: 5%;
+      }
+
+      footer {
+        padding: 1%;
+        background-color: rgb(168, 53, 0);
+        color: white;
+      }
+
+      th, td {
+        padding: 8px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+      }
+      tr:nth-child(even) {background-color: #f2f2f2;}
+
+  </style>
+
+
 </head>
 
 <body>
@@ -32,15 +60,13 @@
                   <div lass="col-12" style="border-color: black; border: 1px; background-color: white; padding: 5%; padding-top: 1%;">
                       <h3>Current Weather on Mars</h3>
                       <hr style="border-width: 2px; border-color:  rgb(168, 53, 0);">
-                      <p>{{mars_data.mars_weather}}</p>
+                      <p style="font-size: 15px;">{{mars_data.mars_weather}}</p>
                   </div>
-                  <div lass="col-12" style="padding: 5%;">
+                  <br><br>
+                  <div lass="col-12" style="padding: 5%; margin-bottom: 10%; background-color: white;">
                     <h3>Mars Facts</h3>
-                    <table>{{mars_data.mars_facts_html}}</table>
-                    
-                    {{ mars_data.mars_facts_html }}
-
-                    <table border="1" class="dataframe"> <thead> <tr style="text-align: right;"> <th></th> <th>Value</th> </tr> <tr> <th>Description</th> <th></th> </tr> </thead> <tbody> <tr> <th>Equatorial Diameter:</th> <td>6,792 km</td> </tr> <tr> <th>Polar Diameter:</th> <td>6,752 km</td> </tr> <tr> <th>Mass:</th> <td>6.39 × 10^23 kg (0.11 Earths)</td> </tr> <tr> <th>Moons:</th> <td>2 (Phobos &amp; Deimos)</td> </tr> <tr> <th>Orbit Distance:</th> <td>227,943,824 km (1.38 AU)</td> </tr> <tr> <th>Orbit Period:</th> <td>687 days (1.9 years)</td> </tr> <tr> <th>Surface Temperature:</th> <td>-87 to -5 °C</td> </tr> <tr> <th>First Record:</th> <td>2nd millennium BC</td> </tr> <tr> <th>Recorded By:</th> <td>Egyptian astronomers</td> </tr> </tbody> </table>
+                    <hr style="border-width: 2px; border-color:  rgb(168, 53, 0);">
+                      {{ mars_data.mars_facts_html|safe }}
                   </div>
               </div>
             </div>
@@ -64,6 +90,13 @@
 
     </div>
   </div>
+
+  <footer>
+    <div class="footer-copyright text-center py-3">© 2019 Copyright:
+      <a href="https://www.linkedin.com/in/cesarmosquera/en" target="_blank"> Cesar Mosquera</a>
+    </div>
+  </footer>
+
 </body>
 
 </html>
