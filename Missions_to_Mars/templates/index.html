@@ -5,22 +5,64 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Costa Rica Weather</title>
+  <title>Mission to Mars</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 
 <body>
   <div class="container-fluid">
-    <div class="jumbotron text-center">
-      <h1>Visit the...</h1>
-      <p>Beach. Rainforest. Volcano. Tree House. Sloths.</p>
-      <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Get Data!</a></p>
+    <div class="jumbotron text-center" style="background-color: rgb(168, 53, 0); color: white;">
+      <h1>Mission to Mars</h1>
+      <p>Images and information about Mars.</p>
+      <p><a class="btn btn-primary btn-lg" href="/scrape" role="button" style="background-color: rgb(104, 104, 93); border-color: black ;">Scrape New Data</a></p>
     </div>
-    <img src="{{ vacation.sloth_img }}" alt="Sloth">
-    <h2>The typical weather in Costa Rica is:</h2>
-    <h3>Max Temp: {{ vacation.max_temp }}</h3>
-    <h3>Min Temp: {{ vacation.min_temp }}</h3>
-  </div>
+    <div>
+        <div class="container" style="background-color: rgb(248, 248, 248);">
+            <div class="row">
+              <div class="col-md-12" style="padding-top: 5%; padding-left: 5%; padding-right:5%; ">
+                <h2>Latest Mars News</h2>
+                <hr style="border-width: 2px; border-color:  rgb(168, 53, 0);">
+                <h3>{{mars_data.news_title}}</h3>
+                <p>{{mars_data.news_p}}</p>
+              </div>
+              <div class="col-md-7">
+                <img src="{{mars_data.featured_image_url}}" alt="Featured Mars Image" style="max-width:100%; height:auto; padding: 5%;"> 
+              </div>
+              <div class="col-md-5" style="padding-right: 5%; padding-top: 5%;">
+                  <div lass="col-12" style="border-color: black; border: 1px; background-color: white; padding: 5%; padding-top: 1%;">
+                      <h3>Current Weather on Mars</h3>
+                      <hr style="border-width: 2px; border-color:  rgb(168, 53, 0);">
+                      <p>{{mars_data.mars_weather}}</p>
+                  </div>
+                  <div lass="col-12" style="padding: 5%;">
+                    <h3>Mars Facts</h3>
+                    <table>{{mars_data.mars_facts_html}}</table>
+                    
+                    {{ mars_data.mars_facts_html }}
+
+                    <table border="1" class="dataframe"> <thead> <tr style="text-align: right;"> <th></th> <th>Value</th> </tr> <tr> <th>Description</th> <th></th> </tr> </thead> <tbody> <tr> <th>Equatorial Diameter:</th> <td>6,792 km</td> </tr> <tr> <th>Polar Diameter:</th> <td>6,752 km</td> </tr> <tr> <th>Mass:</th> <td>6.39 × 10^23 kg (0.11 Earths)</td> </tr> <tr> <th>Moons:</th> <td>2 (Phobos &amp; Deimos)</td> </tr> <tr> <th>Orbit Distance:</th> <td>227,943,824 km (1.38 AU)</td> </tr> <tr> <th>Orbit Period:</th> <td>687 days (1.9 years)</td> </tr> <tr> <th>Surface Temperature:</th> <td>-87 to -5 °C</td> </tr> <tr> <th>First Record:</th> <td>2nd millennium BC</td> </tr> <tr> <th>Recorded By:</th> <td>Egyptian astronomers</td> </tr> </tbody> </table>
+                  </div>
+              </div>
+            </div>
+        </div>
+        <br><hr><br>
+        <div class="container" style="background-color: rgb(248, 248, 248);">
+          <div class="row" >
+            <h2 style="text-align: center;">Mars Hemispheres</h2>
+            <hr style="border-width: 2px; border-color:  rgb(168, 53, 0);">
+            {% for item in mars_data.hemisphere_image_urls %} 
+                <div class="col-md-6">
+                    <img src="{{item.img_url}}" alt="{{item.title}}" style="max-width:100%; height:auto; padding: 5%; background-color:white;"> 
+                    <h3 style="text-align: center;" style="background: white; color: red;">{{item.title}}</h3>
+                    <hr style="border-width: 2px; border-color:  rgb(168, 53, 0);">
+                </div>
+            {% endfor %}
+            
+          </div>
+        </div>
+        <br><br>
+
+    </div>
   </div>
 </body>
 
