@@ -26,7 +26,7 @@
       }
 
       th, td {
-        padding: 8px;
+        padding: 4px;
         text-align: left;
         border-bottom: 1px solid #ddd;
       }
@@ -54,18 +54,18 @@
                 <p>{{mars_data.news_p}}</p>
               </div>
               <div class="col-md-7">
-                <img src="{{mars_data.featured_image_url}}" alt="Featured Mars Image" style="max-width:100%; height:auto; padding: 5%;"> 
+                <img class="align-self-center" src="{{mars_data.featured_image_url}}" alt="Featured Mars Image" style="max-width:100%; height:auto; padding: 5%; "> 
               </div>
-              <div class="col-md-5" style="padding-right: 5%; padding-top: 5%;">
-                  <div lass="col-12" style="border-color: black; border: 1px; background-color: white; padding: 5%; padding-top: 1%;">
+              <div class="col-md-5" style="padding-right: 5%; padding-top: 1%;">
+                  <div lass="col-12" style="border-color: black; border: 1px; background-color: white; padding: 5%; padding-top: 1%; padding-bottom: 1%">
                       <h3>Current Weather on Mars</h3>
-                      <hr style="border-width: 2px; border-color:  rgb(168, 53, 0);">
+                      <hr style="border-width: 2px; border-color:  rgb(168, 53, 0); margin-top: 0em; margin-bottom: 0.5em;">
                       <p style="font-size: 15px;">{{mars_data.mars_weather}}</p>
                   </div>
-                  <br><br>
-                  <div lass="col-12" style="padding: 5%; margin-bottom: 10%; background-color: white;">
+                  <br>
+                  <div lass="col-12" style="padding: 5%; margin-bottom: 10%; background-color: white; padding-top: 0.1%; padding-bottom: 2%;">
                     <h3>Mars Facts</h3>
-                    <hr style="border-width: 2px; border-color:  rgb(168, 53, 0);">
+                    <hr style="border-width: 2px; border-color:  rgb(168, 53, 0); margin-top: 0em; margin-bottom: 1em;">
                       {{ mars_data.mars_facts_html|safe }}
                   </div>
               </div>
