@@ -217,10 +217,10 @@ def scrape():
             
             # Get the image URL of the high resolution URL
             # For getting the Original .tif
-            link_son = soup.find("a", text="Original")['href']
+            #link_son = soup.find("a", text="Original")['href']
             
             # For getting the Sample .jpg
-            #link_son = soup.find("a", text="Sample")['href']
+            link_son = soup.find("a", text="Sample")['href']
             
             # Print results only if title, price, and link are available
             if (title and link_parent):
