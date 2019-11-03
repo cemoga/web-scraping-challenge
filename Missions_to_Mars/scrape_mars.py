@@ -69,20 +69,20 @@ def scrape():
     # Scrape page into Soup
     html = browser.html
     soup = bs(html, "html.parser")
-    time.sleep(1)
+    time.sleep(3)
 
     # Click in one of the images
-    browser.click_link_by_partial_text('Curiosity')
+    browser.click_link_by_partial_text('FULL IMAGE')
     time.sleep(5)
 
     # Click in the button for more information
     browser.click_link_by_partial_text('more info')
-    time.sleep(1)
+    time.sleep(3)
 
     # Get the new url after clicking "more info" and visiting it
     url = browser.url
     browser.visit(url)
-    time.sleep(1)
+    time.sleep(3)
 
     # Scrape clicked page into Soup
     html = browser.html
@@ -91,6 +91,8 @@ def scrape():
     # Get the base url to be used with relative paths
     parsed = urlparse(url)
     base_url = parsed.scheme +"://"+ parsed.netloc
+
+    time.sleep(3)
 
     # Get the high resolution image from the accesed page
     featured_image_url = base_url +  soup.find('img', class_="main_image")["src"]
@@ -215,10 +217,10 @@ def scrape():
             
             # Get the image URL of the high resolution URL
             # For getting the Original .tif
-            #link_son = soup.find("a", text="Original")['href']
+            link_son = soup.find("a", text="Original")['href']
             
             # For getting the Sample .jpg
-            link_son = soup.find("a", text="Sample")['href']
+            #link_son = soup.find("a", text="Sample")['href']
             
             # Print results only if title, price, and link are available
             if (title and link_parent):
