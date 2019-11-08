@@ -3,6 +3,10 @@
 ## Project Description
 The goal of the project was to use a flask server to scrape a series of urls described below, store the information in a `MongoDB`database and upload the scraped information into a website. A screen shot of the final result is presented below too.
 
+### App Running
+
+![Initial](Missions_to_Mars/ScreenShots/app_running.gif"App Running`")
+
 ### Sample website
 
 ![Initial](Missions_to_Mars/ScreenShots/2_Final.png "Page before running the `Scrape New Data`")
