@@ -20,6 +20,7 @@ The goal of the project was to use a flask server to scrape a series of urls des
 ##### Mars Hemispheres (images)
 - https://astrogeology.usgs.gov/search/results?q=hemisphere+enhanced&k1=target&v1=Mars
 
+<hr>
 
 ## Necessary Steps to Run all the Project
 
