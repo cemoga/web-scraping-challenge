@@ -118,19 +118,12 @@ def scrape():
     html = browser.html
     soup = bs(html, "html.parser")
 
-    # Get the image URL
-
-    # Get all the text
-    mars_weather_p_a = soup.find("div", class_="js-tweet-text-container").text
-
-    # Get the text in the last part
-    mars_weather_a = soup.find("div", class_="js-tweet-text-container").findChildren()[1].text
-
-    # Eliminate the last part of the text
-    mars_weather = mars_weather_p_a.replace(mars_weather_a,'')
+    # Get the twit
+    mars_weather = soup.find("div", class_="js-tweet-text-container")
+    mars_weather = mars_weather.find("p").text
 
     browser.quit()
-    #print(mars_weather)
+    print(mars_weather)
 
 
     # ## Mars Facts
@@ -149,7 +142,7 @@ def scrape():
     tables_df = pd.read_html(url)
 
     # Get first table with the facts
-    mars_facts_df = tables_df[1]
+    mars_facts_df = tables_df[0]
 
     # Rename column of the dataframe
     mars_facts_df = mars_facts_df.rename(columns={0: "Description", 1: "Value"})
