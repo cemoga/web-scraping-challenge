@@ -14,7 +14,7 @@
 4. - Open your browser and visit the url: http://127.0.0.1:5000/
 
 # File Description
-### - Missions_to_Mars\
+### - `Missions_to_Mars\`
 #### `app.py`
 - Contains Python app that uses the flask library that runs the server in the  the url: http://127.0.0.1:5000/ and calls the `Missions_to_Mars\templates\index.html` file
 #### - `mission_to_mars.ipynb` 
@@ -22,7 +22,6 @@
 #### - `scrape_mars` 
 - Contains Python routine used and called by the main routine `\Missions_to_Mars\app.py` and it is called by pressing the `Scrape New Data`button in the url: in the url: http://127.0.0.1:5000/
 #### -  `ScreenShots`
-- `1. Initial.png` - It is the screenshot of the initial state of the `Missions_to_Mars\templates\index.html` file `before` running the `Scrape New Data` button which calls the `scrape_mars` routine
-- `2. Final.png` - It is the screenshot of the final state of the `Missions_to_Mars\templates\index.html` file `after`running the `Scrape New Data`button which callse the `scrape_mars` routine
-#### - `templates` 
-- `index.html` - Contains the html and css codes necessary for the presentation of the scrapped data obtained by `Scrape New Data`button which callse the `scrape_mars` routine
+- `1. Initial.png` - It is the screenshot of the initial state of the `Missions_to_Mars\templates\index.html` file `before` running the `Scrape New Data` button which calls the `\Missions_to_Mars\scrape_mars.py` routine
+- `2. Final.png` - It is the screenshot of the final state of the `Missions_to_Mars\templates\index.html` file `after`running the `Scrape New Data`button which calls the `\Missions_to_Mars\scrape_mars.py` routine
+- `index.html` - Contains the html and css codes necessary for the presentation of the scrapped data obtained by `Scrape New Data`button which calls the `\Missions_to_Mars\scrape_mars.py` routine
