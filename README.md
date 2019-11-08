@@ -5,7 +5,7 @@ The goal of the project was to use a flask server to scrape a series of urls des
 
 ### App Running
 
-![Initial](Missions_to_Mars/ScreenShots/app_running.gif"App Running`")
+![Initial](Missions_to_Mars/ScreenShots/app_running.gif "App Running`")
 
 ### Sample website
 
