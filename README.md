@@ -23,7 +23,11 @@
 - Contains Python routine used and called by the main routine `\Missions_to_Mars\app.py` and it is called by pressing the `Scrape New Data`button in the url: in the url: `http://127.0.0.1:5000/`
 #### -  `ScreenShots`
 - `1. Initial.png` - It is the screenshot of the initial state of the `Missions_to_Mars\templates\index.html` file `before` running the `Scrape New Data` button which calls the `\Missions_to_Mars\scrape_mars.py` routine
-![alt text]('Missions_to_Mars/ScreenShots/1. Initial.png' "Description goes here")
+
+![Initial](..Missions_to_Mars/ScreenShots/1_Initial.png "Page before running the `Scrape New Data`")
+
+![Alt text](..Missions_to_Mars/ScreenShots/1_Initial.png?raw=true "Title")
+
 - `2. Final.png` - It is the screenshot of the final state of the `Missions_to_Mars\templates\index.html` file `after`running the `Scrape New Data`button which calls the `\Missions_to_Mars\scrape_mars.py` routine
 #### -  `Templates`
 - `index.html` - Contains the html and css codes necessary for the presentation of the scrapped data obtained by `Scrape New Data`button which calls the `\Missions_to_Mars\scrape_mars.py` routine
