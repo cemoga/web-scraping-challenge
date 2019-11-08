@@ -3,22 +3,23 @@
 ## Project Description
 The goal of the project was to use a flask server to scrape a series of urls described below, store the information in a `MongoDB`database and upload the scraped information into a website. A screen shot of the final result is presented below too.
 
-### Scraped Urls:
-
-NASA Mars News (text)
-- https://mars.nasa.gov/news/
-JPL Mars Space Images - Featured Image (image)
-- https://www.jpl.nasa.gov/spaceimages/?search=&category=Mars
-Mars Weather (text)
-- https://twitter.com/marswxreport?lang=en
-Mars Facts (table)
-- https://space-facts.com/mars/
-Mars Hemispheres (images)
-- https://astrogeology.usgs.gov/search/results?q=hemisphere+enhanced&k1=target&v1=Mars
-
 ### Sample website
 
 ![Initial](Missions_to_Mars/ScreenShots/2_Final.png "Page before running the `Scrape New Data`")
+
+### Scraped Urls:
+
+##### NASA Mars News (text)
+- https://mars.nasa.gov/news/
+##### JPL Mars Space Images - Featured Image (image)
+- https://www.jpl.nasa.gov/spaceimages/?search=&category=Mars
+##### Mars Weather (text)
+- https://twitter.com/marswxreport?lang=en
+##### Mars Facts (table)
+- https://space-facts.com/mars/
+##### Mars Hemispheres (images)
+- https://astrogeology.usgs.gov/search/results?q=hemisphere+enhanced&k1=target&v1=Mars
+
 
 ## Necessary Steps to Run all the Project
 
