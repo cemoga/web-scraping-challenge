@@ -1,4 +1,26 @@
-# Necessary Steps to Run all the Project
+# Project Scraping the web
+
+## Project Description
+The goal of the project was to use a flask server to scrape a series of urls described below, store the information in a `MongoDB`database and upload the scraped information into a website. A screen shot of the final result is presented below too.
+
+### Scraped Urls:
+
+NASA Mars News (text)
+- https://mars.nasa.gov/news/
+JPL Mars Space Images - Featured Image (image)
+- https://www.jpl.nasa.gov/spaceimages/?search=&category=Mars
+Mars Weather (text)
+- https://twitter.com/marswxreport?lang=en
+Mars Facts (table)
+- https://space-facts.com/mars/
+Mars Hemispheres (images)
+- https://astrogeology.usgs.gov/search/results?q=hemisphere+enhanced&k1=target&v1=Mars
+
+### Sample website
+
+![Initial](Missions_to_Mars/ScreenShots/2_Final.png "Page before running the `Scrape New Data`")
+
+## Necessary Steps to Run all the Project
 
 1. - Install or have installed these libraries in your Git Enviroment:
         -   pandas
@@ -23,12 +45,6 @@
 - Contains Python routine used and called by the main routine `\Missions_to_Mars\app.py` and it is called by pressing the `Scrape New Data`button in the url: in the url: `http://127.0.0.1:5000/`
 #### -  `ScreenShots`
 - `1. Initial.png` - It is the screenshot of the initial state of the `Missions_to_Mars\templates\index.html` file `before` running the `Scrape New Data` button which calls the `\Missions_to_Mars\scrape_mars.py` routine
-
-![Initial](Missions_to_Mars/ScreenShots/1_Initial.png "Page before running the `Scrape New Data`")
-
 - `2. Final.png` - It is the screenshot of the final state of the `Missions_to_Mars\templates\index.html` file `after`running the `Scrape New Data`button which calls the `\Missions_to_Mars\scrape_mars.py` routine
-
-![Initial](Missions_to_Mars/ScreenShots/2_Final.png "Page before running the `Scrape New Data`")
-
-#### -  `Templates`
+#### -  `templates`
 - `index.html` - Contains the html and css codes necessary for the presentation of the scrapped data obtained by `Scrape New Data`button which calls the `\Missions_to_Mars\scrape_mars.py` routine
