@@ -14,9 +14,9 @@
 4. - Open your browser and visit the url: http://127.0.0.1:5000/
 
 # File Description
-### - \Missions_to_Mars\
-        - `app.py`
-                - Contains Python app that uses the flask library that runs the server in the  the url: http://127.0.0.1:5000/ and calls the `Missions_to_Mars\templates\index.html` file
+### - Missions_to_Mars\
+- `app.py`
+<p> Contains Python app that uses the flask library that runs the server in the  the url: http://127.0.0.1:5000/ and calls the `Missions_to_Mars\templates\index.html` file
 #### - `mission_to_mars.ipynb` 
 - Contains the Jupyter Notebook with the explained code for scrapping the different urls used in the project
 #### - `scrape_mars` 
