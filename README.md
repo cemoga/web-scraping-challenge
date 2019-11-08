@@ -26,8 +26,9 @@
 
 ![Initial](Missions_to_Mars/ScreenShots/1_Initial.png "Page before running the `Scrape New Data`")
 
-![Alt text](Missions_to_Mars/ScreenShots/1_Initial.png?raw=true "Title")
-
 - `2. Final.png` - It is the screenshot of the final state of the `Missions_to_Mars\templates\index.html` file `after`running the `Scrape New Data`button which calls the `\Missions_to_Mars\scrape_mars.py` routine
+
+![Initial](Missions_to_Mars/ScreenShots/2_Final.png "Page before running the `Scrape New Data`")
+
 #### -  `Templates`
 - `index.html` - Contains the html and css codes necessary for the presentation of the scrapped data obtained by `Scrape New Data`button which calls the `\Missions_to_Mars\scrape_mars.py` routine
