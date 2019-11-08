@@ -35,7 +35,7 @@ The goal of the project was to use a flask server to scrape a series of urls des
 2. - Download or have downloaded the chromedriver.exe in the path "/usr/local/bin/chromedriver" for Mac Users
 2. - Run the `Mongo daemon`, in one terminal window run `~/mongodb/bin/mongod`. This will start the Mongo server.
 3. - Run the `\Missions_to_Mars\app.py` file
-4. - Open your browser and visit the url: http://127.0.0.1:5000/
+4. - Open your browser and visit the url: `http://127.0.0.1:5000/`
 
 <hr>
 
