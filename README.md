@@ -37,6 +37,8 @@ The goal of the project was to use a flask server to scrape a series of urls des
 3. - Run the `\Missions_to_Mars\app.py` file
 4. - Open your browser and visit the url: http://127.0.0.1:5000/
 
+<hr>
+
 # File Description
 ### - `Missions_to_Mars\`
 #### - `app.py`
