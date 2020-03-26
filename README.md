@@ -1,7 +1,7 @@
-# Project Scraping the web
+# Mars Facts and Images Scraped from Multiple Sources
 
 ## Project Description
-The goal of the project was to use a flask server to scrape a series of urls described below, store the information in a `MongoDB`database and upload the scraped information into a website. A screen shot of the final result is presented below too.
+The goal of the project is to scrape the multiple web sources with information and images about Mars and NASA, store it in a database and finally display it in a customized web site. For this project, a flask server was created to scrape a series of URLs described below, the information was stored in a `MongoDB`database and the information was displayed into a website. A screenshot of the final result is presented below too.
 
 ### App Running
 
@@ -28,7 +28,7 @@ The goal of the project was to use a flask server to scrape a series of urls des
 
 ## Necessary Steps to Run all the Project
 
-1. - Install or have installed these libraries in your Git Enviroment:
+1. - Install or have installed these libraries in your Git Environment:
         -   pandas
         -   splinter
         -   bs4
@@ -39,7 +39,7 @@ The goal of the project was to use a flask server to scrape a series of urls des
 2. - Download or have downloaded the chromedriver.exe in the path "/usr/local/bin/chromedriver" for Mac Users
 2. - Run the `Mongo daemon`, in one terminal window run `~/mongodb/bin/mongod`. This will start the Mongo server.
 3. - Run the `\Missions_to_Mars\app.py` file
-4. - Open your browser and visit the url: `http://127.0.0.1:5000/`
+4. - Open your browser and visit the URL: `http://127.0.0.1:5000/`
 
 <hr>
 
